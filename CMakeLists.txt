@@ -8,4 +8,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 file(COPY test DESTINATION .)
 add_executable(poly poly.cpp)
 
-add_test(NAME integration COMMAND pytest ${CMAKE_SOURCE_DIR}/test.py --junitxml=integration.xml)
+add_test(NAME integration COMMAND /usr/bin/pytest ${CMAKE_SOURCE_DIR}/test.py --junitxml=integration.xml)
