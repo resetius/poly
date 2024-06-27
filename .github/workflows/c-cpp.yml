@@ -16,7 +16,7 @@ jobs:
     - name: apt-get update
       run: sudo apt-get update
     - name: Install packages
-      run: sudo apt-get install python3-pytest cmake ninja-build
+      run: sudo apt-get install libcmocka-dev python3-pytest cmake ninja-build
     - name: configure
       run: mkdir build && cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo
     - name: make
